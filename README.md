@@ -10,6 +10,31 @@ This means we can set up a machine to a specific state when initialized.
 
 This uploads single file to the machine.
 
+## New project environment
+
+When given a new project, you want to ask a few questions to help you get going. For example
+
+- What language is it in?
+- Is there a framwork to install? (Rails, Flask, Django, Wordpress)
+- Any specific packages? If so, is there a list? (Gemfile, Requirements.txt)
+- Any tests?
+
+### What language is it in
+
+Code is in JS and orthers. There are some tests in ruby and rpsec.
+
+### Is there a framework to install
+
+No. Only testing framework `rspec`.
+
+### Any specific packages
+
+Yes, wit the environment file you have a Gemfile with dependencies.
+
+### Any tests
+
+Yes, there are 2 tests. Integration test to run outside the machine with `rake spec`. There is also some unit testing in JS, inside the machine.
+
 ## Gem and builder vs PIP and Packages
 
 - Gems are packages in ruby or dependencies
