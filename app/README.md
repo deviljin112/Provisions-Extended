@@ -2,7 +2,7 @@
 
 ## Description
 
-This app is intended for use with the Sparta Global Devops Stream as a sample app. You can clone the repo and use it as is but no changes will be accepted on this branch. 
+This app is intended for use with the Sparta Global Devops Stream as a sample app. You can clone the repo and use it as is but no changes will be accepted on this branch.
 
 To use the repo within your course you should fork it.
 
@@ -30,7 +30,6 @@ This page has be implemented poorly on purpose to produce a slow running functio
 
 The higher the fibonacci number requested the longer the request will take. A very large number can crash or block the process.
 
-
 ### Hackable code
 
 ``localhost:3000/hack/{code}``
@@ -41,7 +40,7 @@ There is a commented route that opens a serious security vulnerability. This sho
 
 Clone the app
 
-```
+```bash
 npm install
 npm start
 ```
@@ -52,12 +51,8 @@ You can then access the app on port 3000 at one of the urls given above.
 
 There is a basic test framework available that uses the Mocha/Chai framework
 
-```
+```bash
 npm test
 ```
 
 The test for posts will fail ( as expected ) if the database has not been correctly setup.
-
-
-
-

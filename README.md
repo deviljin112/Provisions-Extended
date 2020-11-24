@@ -4,11 +4,39 @@ Provisioning is derived from providing and supplying something. For example, Pro
 </br>
 This means we can set up a machine to a specific state when initialized.
 
+## Core sections
+
+- There are some actions that are core to provisioning.
+- These concepts are tool and language agnostic.
+  - Making files available
+  - Being able to run commands/scripts
+  - Injecting environment variables
+
 ## Upload a single file to VM
 
 `vagrant upload <path/to/file>`
 
 This uploads single file to the machine.
+
+## Creating a synchronised folder to VM
+
+Allows us to synchronise and send files into the VM. This is so we can make code and other necessary files available.
+
+```ruby
+config.vm.synced_folder "./app", "/app"
+```
+
+### Running a bash script
+
+This bash script can install packages, alter files, do actions, run code, in our linux machine when we run `vagrant up`.
+
+1. Create a `.sh` file
+2. Add a `.provision` method to the vagrantfile
+
+## Managing services
+
+- `sudo systemctl <action> <service>`
+- `sudo systemctl restart nginx`
 
 ## New project environment
 
